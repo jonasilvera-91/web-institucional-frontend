@@ -1,0 +1,46 @@
+@use '../base/variables' as *;
+
+.hero {
+    padding: 5rem 0;
+    background-color: $color-claro;
+}
+
+.hero__contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $espaciado-lg;
+    align-items: center;
+}
+
+.hero__subtitulo {
+    color: $color-secundario;
+    font-weight: bold;
+    margin-bottom: $espaciado-sm;
+}
+
+.hero__titulo {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: $espaciado-md;
+}
+
+.hero__descripcion {
+    color: $color-gris;
+    margin-bottom: $espaciado-lg;
+}
+
+.hero__acciones {
+    display: flex;
+    gap: $espaciado-sm;
+    flex-wrap: wrap;
+}
+
+.hero__placeholder {
+    min-height: 350px;
+    background-color: #dfe6ee;
+    border: 2px dashed #b8c4d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}

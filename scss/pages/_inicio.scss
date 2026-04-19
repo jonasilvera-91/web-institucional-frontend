@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+.formulario-contacto {
+    display: grid;
+    gap: $espaciado-md;
+    max-width: 700px;
+    margin-top: $espaciado-lg;
+}
+
+.formulario-contacto__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 0.9rem 1rem;
+    border: 1px solid $color-borde;
+    border-radius: 0.5rem;
+    font: inherit;
+}

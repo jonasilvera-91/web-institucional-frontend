@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+
+.nosotros,
+.servicios,
+.beneficios,
+.contacto {
+    background-color: $color-blanco;
+}

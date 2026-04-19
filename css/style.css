@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion {
+  padding: 4rem 0;
+}
+
+.seccion__titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.seccion__texto {
+  max-width: 700px;
+  color: #666666;
+}
+
+.encabezado {
+  padding: 1.5rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.encabezado__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navegacion__lista {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  padding: 5rem 0;
+  background-color: #f7f7f7;
+}
+
+.hero__contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero__subtitulo {
+  color: #ff6b35;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero__titulo {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero__descripcion {
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+.hero__acciones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__placeholder {
+  min-height: 350px;
+  background-color: #dfe6ee;
+  border: 2px dashed #b8c4d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.nosotros,
+.servicios,
+.beneficios,
+.contacto {
+  background-color: #ffffff;
+}
+
+.pie {
+  padding: 2rem 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.85rem 1.4rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.boton--principal {
+  background-color: #1f3c88;
+  color: #ffffff;
+}
+
+.boton--secundario {
+  background-color: transparent;
+  border: 1px solid #1f3c88;
+  color: #1f3c88;
+}
+
+.servicios__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-servicio {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario-contacto {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+.formulario-contacto__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

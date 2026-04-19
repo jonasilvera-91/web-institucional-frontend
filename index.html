@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Institucional Modelo</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado__contenido">
+            <a href="#" class="logo">TuMarca</a>
+
+            <nav class="navegacion">
+                <ul class="navegacion__lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="contenedor hero__contenido">
+                <div class="hero__texto">
+                    <p class="hero__subtitulo">Soluciones digitales para tu negocio</p>
+                    <h1 class="hero__titulo">Creamos webs institucionales modernas, claras y profesionales</h1>
+                    <p class="hero__descripcion">
+                        Diseñamos sitios pensados para transmitir confianza, mostrar servicios
+                        y ayudar a convertir visitas en oportunidades reales.
+                    </p>
+                    <div class="hero__acciones">
+                        <a href="#contacto" class="boton boton--principal">Solicitar información</a>
+                        <a href="#servicios" class="boton boton--secundario">Ver servicios</a>
+                    </div>
+                </div>
+
+                <div class="hero__imagen">
+                    <div class="hero__placeholder">Imagen principal</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nosotros seccion" id="nosotros">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">Sobre nosotros</h2>
+                <p class="seccion__texto">
+                    Ayudamos a empresas, profesionales y emprendimientos a construir una presencia
+                    digital sólida, con una web que represente su identidad y comunique valor.
+                </p>
+            </div>
+        </section>
+
+        <section class="servicios seccion" id="servicios">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">Servicios</h2>
+
+                <div class="servicios__grid">
+                    <article class="card-servicio">
+                        <h3>Diseño institucional</h3>
+                        <p>Landing pages y sitios corporativos adaptados a cada cliente.</p>
+                    </article>
+
+                    <article class="card-servicio">
+                        <h3>Desarrollo frontend</h3>
+                        <p>Maquetación moderna, responsive y optimizada para una buena experiencia.</p>
+                    </article>
+
+                    <article class="card-servicio">
+                        <h3>Escalabilidad futura</h3>
+                        <p>Estructura preparada para crecer a multipágina o integrar backend.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="beneficios seccion">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">¿Por qué elegir este modelo?</h2>
+                <p class="seccion__texto">
+                    Porque permite partir de una base profesional, adaptable y lista para personalizar
+                    según el tipo de cliente y sus necesidades.
+                </p>
+            </div>
+        </section>
+
+        <section class="contacto seccion" id="contacto">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">Contacto</h2>
+                <p class="seccion__texto">
+                    Contanos sobre tu proyecto y armamos una propuesta a medida.
+                </p>
+
+                <form class="formulario-contacto">
+                    <div class="formulario-contacto__grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="formulario-contacto__grupo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
+                    </div>
+
+                    <div class="formulario-contacto__grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta"></textarea>
+                    </div>
+
+                    <button type="submit" class="boton boton--principal">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 Web Institucional Modelo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

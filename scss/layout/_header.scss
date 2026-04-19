@@ -1,0 +1,24 @@
+@use '../base/variables' as *;
+
+.encabezado {
+    padding: $espaciado-md 0;
+    background-color: $color-blanco;
+    border-bottom: 1px solid $color-borde;
+}
+
+.encabezado__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $espaciado-md;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navegacion__lista {
+    display: flex;
+    gap: $espaciado-md;
+}

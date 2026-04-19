@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+
+.pie {
+    padding: $espaciado-lg 0;
+    background-color: $color-oscuro;
+    color: $color-blanco;
+    text-align: center;
+}

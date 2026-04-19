@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+
+.servicios__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $espaciado-md;
+    margin-top: $espaciado-lg;
+}
+
+.card-servicio {
+    background-color: $color-blanco;
+    border: 1px solid $color-borde;
+    padding: $espaciado-lg;
+    border-radius: 1rem;
+}

@@ -1,0 +1,42 @@
+@use './variables' as *;
+
+body {
+    font-family: $fuente-principal;
+    color: $color-oscuro;
+    background-color: $color-blanco;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: $ancho-contenedor;
+    margin: 0 auto;
+}
+
+.seccion {
+    padding: $espaciado-xl 0;
+}
+
+.seccion__titulo {
+    font-size: 2rem;
+    margin-bottom: $espaciado-md;
+}
+
+.seccion__texto {
+    max-width: 700px;
+    color: $color-gris;
+}
