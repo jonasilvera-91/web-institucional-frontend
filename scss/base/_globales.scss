@@ -1,42 +1,88 @@
 @use './variables' as *;
 
 body {
-    font-family: $fuente-principal;
-    color: $color-oscuro;
     background-color: $color-blanco;
-    line-height: 1.6;
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
 
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+main {
+    overflow: hidden;
+}
+
 .contenedor {
-    width: 90%;
-    max-width: $ancho-contenedor;
+    width: min(90%, $ancho-contenedor);
     margin: 0 auto;
 }
 
 .seccion {
-    padding: $espaciado-xl 0;
+    padding: $espaciado-xxl 0;
 }
 
 .seccion__titulo {
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: $espaciado-md;
+    max-width: 800px;
 }
 
 .seccion__texto {
-    max-width: 700px;
-    color: $color-gris;
+    max-width: 720px;
+    font-size: 1.05rem;
+}
+
+.cabecera-seccion {
+    margin-bottom: 3rem;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    margin-bottom: $espaciado-sm;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background-color: rgba(37, 99, 235, 0.1);
+    color: $color-primario;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.etiqueta-seccion--clara {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: $color-blanco;
+}
+
+.animacion-aparicion {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animacion-aparicion.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -3,105 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Web Institucional Modelo</title>
-
+    <meta
+        name="description"
+        content="Modelo de web institucional profesional, moderna y adaptable para empresas, emprendimientos y profesionales."
+    >
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
 
     <header class="encabezado">
         <div class="contenedor encabezado__contenido">
-            <a href="#" class="logo">TuMarca</a>
+            <a href="#inicio" class="logo">TuMarca</a>
 
-            <nav class="navegacion">
+            <nav class="navegacion" id="navegacion">
                 <ul class="navegacion__lista">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
+
+            <button
+            class="boton-menu"
+            id="boton-menu"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="navegacion"
+        >
+            <span class="boton-menu__linea"></span>
+            <span class="boton-menu__linea"></span>
+            <span class="boton-menu__linea"></span>
+        </button>
+
+            <a href="#contacto" class="boton boton--principal encabezado__boton">Solicitar propuesta</a>
         </div>
     </header>
 
     <main>
-        <section class="hero" id="inicio">
+        <section class="hero animacion-aparicion" id="inicio">
             <div class="contenedor hero__contenido">
                 <div class="hero__texto">
-                    <p class="hero__subtitulo">Soluciones digitales para tu negocio</p>
-                    <h1 class="hero__titulo">Creamos webs institucionales modernas, claras y profesionales</h1>
+                    <p class="hero__subtitulo">Soluciones web para marcas y negocios</p>
+                    <h1 class="hero__titulo">
+                        Diseñamos webs institucionales claras, modernas y preparadas para crecer
+                    </h1>
                     <p class="hero__descripcion">
-                        Diseñamos sitios pensados para transmitir confianza, mostrar servicios
-                        y ayudar a convertir visitas en oportunidades reales.
+                        Creamos sitios pensados para transmitir confianza, mostrar tus servicios
+                        de forma profesional y ayudarte a generar más oportunidades comerciales.
                     </p>
+
                     <div class="hero__acciones">
-                        <a href="#contacto" class="boton boton--principal">Solicitar información</a>
+                        <a href="#contacto" class="boton boton--principal">Quiero mi web</a>
                         <a href="#servicios" class="boton boton--secundario">Ver servicios</a>
                     </div>
+
+                    <ul class="hero__datos">
+                        <li>Diseño adaptable</li>
+                        <li>Enfoque profesional</li>
+                        <li>Base escalable a futuro</li>
+                    </ul>
                 </div>
 
-                <div class="hero__imagen">
-                    <div class="hero__placeholder">Imagen principal</div>
+                <div class="hero__visual">
+                    <div class="hero__imagen-principal">
+                        <span>Vista previa de sitio institucional</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="nosotros seccion" id="nosotros">
+        <section class="confianza animacion-aparicion">
             <div class="contenedor">
-                <h2 class="seccion__titulo">Sobre nosotros</h2>
-                <p class="seccion__texto">
-                    Ayudamos a empresas, profesionales y emprendimientos a construir una presencia
-                    digital sólida, con una web que represente su identidad y comunique valor.
-                </p>
+                <div class="confianza__grid">
+                    <article class="confianza__item">
+                        <h2>+20</h2>
+                        <p>Diseños adaptables a distintos rubros</p>
+                    </article>
+
+                    <article class="confianza__item">
+                        <h2>100%</h2>
+                        <p>Estructura lista para responsive</p>
+                    </article>
+
+                    <article class="confianza__item">
+                        <h2>Escalable</h2>
+                        <p>Preparada para crecer a multipágina</p>
+                    </article>
+
+                    <article class="confianza__item">
+                        <h2>Modular</h2>
+                        <p>Organización clara para futuras mejoras</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="servicios seccion" id="servicios">
+        <section class="nosotros seccion animacion-aparicion" id="nosotros">
+            <div class="contenedor nosotros__contenido">
+                <div class="nosotros__texto">
+                    <p class="etiqueta-seccion">Sobre nosotros</p>
+                    <h2 class="seccion__titulo">
+                        Una base profesional para presentar tu negocio como corresponde
+                    </h2>
+                    <p class="seccion__texto">
+                        Esta plantilla está pensada para empresas, emprendimientos y profesionales
+                        que necesitan una presencia digital sólida, clara y visualmente confiable.
+                    </p>
+                    <p class="seccion__texto">
+                        El objetivo es contar con una web institucional moderna, adaptable a
+                        diferentes rubros y preparada para sumar nuevas funciones más adelante.
+                    </p>
+                </div>
+
+                <div class="nosotros__visual">
+                    <div class="nosotros__imagen">
+                        <span>Bloque visual institucional</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios seccion animacion-aparicion" id="servicios">
             <div class="contenedor">
-                <h2 class="seccion__titulo">Servicios</h2>
+                <div class="cabecera-seccion">
+                    <p class="etiqueta-seccion">Servicios</p>
+                    <h2 class="seccion__titulo">Una solución clara, moderna y pensada para vender mejor</h2>
+                    <p class="seccion__texto">
+                        La estructura puede adaptarse según el tipo de cliente, su rubro y el nivel
+                        de profundidad que necesite en su sitio.
+                    </p>
+                </div>
 
                 <div class="servicios__grid">
                     <article class="card-servicio">
-                        <h3>Diseño institucional</h3>
-                        <p>Landing pages y sitios corporativos adaptados a cada cliente.</p>
+                        <div class="card-servicio__icono">01</div>
+                        <h3 class="card-servicio__titulo">Diseño institucional</h3>
+                        <p class="card-servicio__texto">
+                            Presentación profesional del negocio, servicios, propuesta de valor y contacto.
+                        </p>
                     </article>
 
                     <article class="card-servicio">
-                        <h3>Desarrollo frontend</h3>
-                        <p>Maquetación moderna, responsive y optimizada para una buena experiencia.</p>
+                        <div class="card-servicio__icono">02</div>
+                        <h3 class="card-servicio__titulo">Maquetación responsive</h3>
+                        <p class="card-servicio__texto">
+                            Estructura preparada para verse correctamente en desktop, tablet y mobile.
+                        </p>
                     </article>
 
                     <article class="card-servicio">
-                        <h3>Escalabilidad futura</h3>
-                        <p>Estructura preparada para crecer a multipágina o integrar backend.</p>
+                        <div class="card-servicio__icono">03</div>
+                        <h3 class="card-servicio__titulo">Escalabilidad futura</h3>
+                        <p class="card-servicio__texto">
+                            Posibilidad de sumar nuevas páginas, formularios, integraciones o backend.
+                        </p>
+                    </article>
+
+                    <article class="card-servicio">
+                        <div class="card-servicio__icono">04</div>
+                        <h3 class="card-servicio__titulo">Personalización visual</h3>
+                        <p class="card-servicio__texto">
+                            Colores, tipografías, bloques y tono visual adaptables a cada marca.
+                        </p>
+                    </article>
+
+                    <article class="card-servicio">
+                        <div class="card-servicio__icono">05</div>
+                        <h3 class="card-servicio__titulo">Orden estructural</h3>
+                        <p class="card-servicio__texto">
+                            Código organizado para facilitar mantenimiento, mejoras y crecimiento.
+                        </p>
+                    </article>
+
+                    <article class="card-servicio">
+                        <div class="card-servicio__icono">06</div>
+                        <h3 class="card-servicio__titulo">Base comercial</h3>
+                        <p class="card-servicio__texto">
+                            Pensada para transmitir confianza y ayudar a captar oportunidades reales.
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="beneficios seccion">
+        <section class="proceso seccion animacion-aparicion" id="proceso">
             <div class="contenedor">
-                <h2 class="seccion__titulo">¿Por qué elegir este modelo?</h2>
-                <p class="seccion__texto">
-                    Porque permite partir de una base profesional, adaptable y lista para personalizar
-                    según el tipo de cliente y sus necesidades.
-                </p>
+                <div class="cabecera-seccion">
+                    <p class="etiqueta-seccion">Proceso de trabajo</p>
+                    <h2 class="seccion__titulo">Cómo se desarrolla una web institucional</h2>
+                </div>
+
+                <div class="proceso__grid">
+                    <article class="paso">
+                        <span class="paso__numero">1</span>
+                        <h3 class="paso__titulo">Relevamiento</h3>
+                        <p class="paso__texto">
+                            Se analiza el negocio, sus objetivos, su propuesta y el tipo de público al que apunta.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso__numero">2</span>
+                        <h3 class="paso__titulo">Estructura</h3>
+                        <p class="paso__texto">
+                            Se organiza el contenido y las secciones para lograr claridad visual y buena navegación.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso__numero">3</span>
+                        <h3 class="paso__titulo">Diseño y desarrollo</h3>
+                        <p class="paso__texto">
+                            Se construye una interfaz profesional, adaptable y alineada con la identidad de marca.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso__numero">4</span>
+                        <h3 class="paso__titulo">Entrega y mejoras</h3>
+                        <p class="paso__texto">
+                            Se deja una base sólida, lista para sumar nuevas funciones cuando el proyecto crezca.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="contacto seccion" id="contacto">
+        <section class="beneficios seccion animacion-aparicion">
+            <div class="contenedor beneficios__contenido">
+                <div class="beneficios__texto">
+                    <p class="etiqueta-seccion">Diferenciales</p>
+                    <h2 class="seccion__titulo">Una web que no solo se vea bien, sino que tenga sentido comercial</h2>
+                </div>
+
+                <div class="beneficios__lista">
+                    <article class="beneficio">
+                        <h3>Imagen profesional</h3>
+                        <p>Ayuda a generar una mejor primera impresión frente a potenciales clientes.</p>
+                    </article>
+
+                    <article class="beneficio">
+                        <h3>Mayor claridad</h3>
+                        <p>Ordena la información del negocio y mejora la forma en que se presentan los servicios.</p>
+                    </article>
+
+                    <article class="beneficio">
+                        <h3>Escalabilidad</h3>
+                        <p>La estructura permite crecer sin tener que rehacer todo desde cero.</p>
+                    </article>
+
+                    <article class="beneficio">
+                        <h3>Adaptabilidad</h3>
+                        <p>Sirve como base para rubros distintos: empresas, profesionales o emprendimientos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta seccion animacion-aparicion">
+            <div class="contenedor cta__contenido">
+                <div class="cta__texto">
+                    <p class="etiqueta-seccion etiqueta-seccion--clara">Empezá tu proyecto</p>
+                    <h2 class="cta__titulo">¿Querés una web institucional lista para representar tu negocio?</h2>
+                    <p class="cta__descripcion">
+                        Partí de una base profesional, ordenada y preparada para crecer con tu marca.
+                    </p>
+                </div>
+
+                <div class="cta__acciones">
+                    <a href="#contacto" class="boton boton--claro">Solicitar información</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios seccion animacion-aparicion" id="testimonios">
             <div class="contenedor">
-                <h2 class="seccion__titulo">Contacto</h2>
-                <p class="seccion__texto">
-                    Contanos sobre tu proyecto y armamos una propuesta a medida.
-                </p>
+                <div class="cabecera-seccion">
+                    <p class="etiqueta-seccion">Testimonios</p>
+                    <h2 class="seccion__titulo">Una muestra de cómo puede presentarse la prueba social</h2>
+                </div>
+
+                <div class="testimonios__grid">
+                    <article class="card-testimonio">
+                        <p class="card-testimonio__texto">
+                            “La web nos permitió presentar mejor nuestros servicios y transmitir una imagen mucho más profesional.”
+                        </p>
+                        <div class="card-testimonio__autor">
+                            <strong>María Fernández</strong>
+                            <span>Estudio profesional</span>
+                        </div>
+                    </article>
+
+                    <article class="card-testimonio">
+                        <p class="card-testimonio__texto">
+                            “Teníamos información dispersa y esta estructura ayudó a ordenar todo de forma clara y comercial.”
+                        </p>
+                        <div class="card-testimonio__autor">
+                            <strong>Rodrigo Pereira</strong>
+                            <span>Empresa de servicios</span>
+                        </div>
+                    </article>
+
+                    <article class="card-testimonio">
+                        <p class="card-testimonio__texto">
+                            “Nos gustó que la base ya quedara preparada para crecer más adelante con nuevas páginas y funciones.”
+                        </p>
+                        <div class="card-testimonio__autor">
+                            <strong>Lucía Suárez</strong>
+                            <span>Emprendimiento en expansión</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto seccion animacion-aparicion" id="contacto">
+            <div class="contenedor contacto__contenido">
+                <div class="contacto__info">
+                    <p class="etiqueta-seccion">Contacto</p>
+                    <h2 class="seccion__titulo">Contanos sobre tu proyecto</h2>
+                    <p class="seccion__texto">
+                        Esta sección puede funcionar como formulario de contacto, solicitud de propuesta
+                        o primer paso para una reunión comercial.
+                    </p>
+
+                    <ul class="contacto__datos">
+                        <li>Email: contacto@tumarca.com</li>
+                        <li>Teléfono: +598 99 000 000</li>
+                        <li>Ubicación: Montevideo, Uruguay</li>
+                    </ul>
+                </div>
 
                 <form class="formulario-contacto">
                     <div class="formulario-contacto__grupo">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
                     </div>
 
                     <div class="formulario-contacto__grupo">
@@ -110,21 +351,96 @@
                     </div>
 
                     <div class="formulario-contacto__grupo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta"></textarea>
+                        <label for="servicio">Tipo de proyecto</label>
+                        <select id="servicio" name="servicio">
+                            <option value="">Seleccionar</option>
+                            <option value="landing">Landing institucional</option>
+                            <option value="multipagina">Sitio multipágina</option>
+                            <option value="redisenio">Rediseño web</option>
+                            <option value="otro">Otro</option>
+                        </select>
                     </div>
 
-                    <button type="submit" class="boton boton--principal">Enviar</button>
+                    <div class="formulario-contacto__grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué necesitás"></textarea>
+                    </div>
+
+                    <button type="submit" class="boton boton--principal">Enviar consulta</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer class="pie">
-        <div class="contenedor">
-            <p>&copy; 2026 Web Institucional Modelo. Todos los derechos reservados.</p>
+        <div class="contenedor pie__contenido">
+            <div class="pie__columna">
+                <a href="#inicio" class="logo logo--footer">TuMarca</a>
+                <p class="pie__texto">
+                    Modelo de web institucional preparado para empresas, emprendimientos y profesionales.
+                </p>
+            </div>
+
+            <div class="pie__columna">
+                <h3 class="pie__titulo">Secciones</h3>
+                <ul class="pie__lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="pie__columna">
+                <h3 class="pie__titulo">Contacto</h3>
+                <ul class="pie__lista">
+                    <li>contacto@tumarca.com</li>
+                    <li>+598 99 000 000</li>
+                    <li>Montevideo, Uruguay</li>
+                </ul>
+            </div>
+
+            <div class="pie__redes">
+                <a href="#" class="pie__red-social" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7C2 4.23858 4.23858 2 7 2Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9081 12.2385 16.0398 11.4079 15.9061C10.5773 15.7724 9.81071 15.3801 9.21774 14.7872C8.62476 14.1942 8.23245 13.4277 8.09876 12.5971C7.96507 11.7665 8.09677 10.9149 8.47513 10.1634C8.85349 9.41187 9.4591 8.79876 10.2059 8.41127C10.9528 8.02378 11.8028 7.88159 12.635 8.005" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </a>
+
+                <a href="#" class="pie__red-social" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+                <a href="#" class="pie__red-social" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M4 5C5.10457 5 6 4.10457 6 3C6 1.89543 5.10457 1 4 1C2.89543 1 2 1.89543 2 3C2 4.10457 2.89543 5 4 5Z" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="contenedor pie__inferior">
+            <p>&copy; 2026 TuMarca. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <a
+    href="https://wa.me/59899000000?text=Hola,%20quiero%20consultar%20por%20una%20web"
+    class="boton-wp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.52 0 .2 5.31.2 11.85c0 2.09.55 4.14 1.59 5.95L0 24l6.37-1.67a11.82 11.82 0 0 0 5.69 1.45h.01c6.54 0 11.86-5.31 11.86-11.85 0-3.17-1.23-6.15-3.41-8.45ZM12.07 21.7h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.8 9.8 0 0 1-1.51-5.19C2.17 6.38 6.6 1.95 12.05 1.95c2.63 0 5.1 1.02 6.96 2.88a9.8 9.8 0 0 1 2.9 6.99c0 5.46-4.44 9.88-9.84 9.88Zm5.41-7.39c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5h-.57c-.2 0-.52.08-.79.38-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.06 2.88 1.21 3.08.15.2 2.08 3.18 5.03 4.46.7.3 1.25.48 1.68.61.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="currentColor"/>
+    </svg>
+</a>
 
     <script src="./js/main.js"></script>
 </body>

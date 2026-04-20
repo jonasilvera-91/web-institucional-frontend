@@ -1,24 +1,108 @@
 @use '../base/variables' as *;
 
 .encabezado {
-    padding: $espaciado-md 0;
-    background-color: $color-blanco;
-    border-bottom: 1px solid $color-borde;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+    transition: padding $transition-base, box-shadow $transition-base, background-color $transition-base;
+}
+
+.encabezado--scroll {
+    padding: 0.75rem 0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 .encabezado__contenido {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: $espaciado-md;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .logo {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 800;
+    color: $color-secundario;
+    flex-shrink: 0;
+}
+
+.navegacion {
+    margin-left: auto;
 }
 
 .navegacion__lista {
     display: flex;
-    gap: $espaciado-md;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navegacion__lista a {
+    position: relative;
+    color: $color-texto;
+    font-weight: 600;
+    transition: color $transition-base;
+}
+
+.navegacion__lista a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 0;
+    height: 2px;
+    background-color: $color-primario;
+    transition: width $transition-base;
+}
+
+.navegacion__lista a:hover {
+    color: $color-primario;
+}
+
+.navegacion__lista a:hover::after {
+    width: 100%;
+}
+
+.boton-menu {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid $color-borde;
+    border-radius: 0.9rem;
+    background-color: $color-blanco;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    transition: border-color $transition-base, box-shadow $transition-base;
+}
+
+.boton-menu:hover {
+    border-color: $color-primario;
+    box-shadow: $sombra-suave;
+}
+
+.boton-menu__linea {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $color-secundario;
+    border-radius: 999px;
+    transition: transform $transition-base, opacity $transition-base;
+}
+
+.boton-menu.activo .boton-menu__linea:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.boton-menu.activo .boton-menu__linea:nth-child(2) {
+    opacity: 0;
+}
+
+.boton-menu.activo .boton-menu__linea:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }

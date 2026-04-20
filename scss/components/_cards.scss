@@ -1,15 +1,109 @@
 @use '../base/variables' as *;
 
-.servicios__grid {
+.servicios__grid,
+.proceso__grid,
+.testimonios__grid {
     display: grid;
+    gap: 1.5rem;
+}
+
+.servicios__grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: $espaciado-md;
-    margin-top: $espaciado-lg;
+}
+
+.proceso__grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonios__grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-servicio,
+.paso,
+.card-testimonio,
+.beneficio,
+.confianza__item {
+    background-color: $color-blanco;
+    border: 1px solid $color-borde;
+    border-radius: $radio-lg;
+    box-shadow: $sombra-suave;
 }
 
 .card-servicio {
-    background-color: $color-blanco;
-    border: 1px solid $color-borde;
-    padding: $espaciado-lg;
-    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform $transition-base, box-shadow $transition-base;
+}
+
+.card-servicio:hover {
+    transform: translateY(-6px);
+    box-shadow: $sombra-media;
+}
+
+.card-servicio__icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235, 0.12);
+    color: $color-primario;
+    font-weight: 700;
+}
+
+.card-servicio__titulo {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.card-servicio__texto {
+    font-size: 0.98rem;
+}
+
+.paso {
+    padding: 2rem 1.5rem;
+}
+
+.paso__numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: $color-secundario;
+    color: $color-blanco;
+    font-weight: 700;
+}
+
+.paso__titulo {
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+}
+
+.card-testimonio {
+    padding: 2rem;
+}
+
+.card-testimonio__texto {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.card-testimonio__autor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.beneficio {
+    padding: 1.5rem;
+}
+
+.beneficio h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
 }

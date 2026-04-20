@@ -1,14 +1,14 @@
-@use './base/reset';
 @use './base/variables';
+@use './base/reset';
 @use './base/tipografia';
 @use './base/globales';
+
+@use './components/botones';
+@use './components/cards';
 
 @use './layout/header';
 @use './layout/hero';
 @use './layout/secciones';
 @use './layout/footer';
-
-@use './components/botones';
-@use './components/cards';
 
 @use './pages/inicio';

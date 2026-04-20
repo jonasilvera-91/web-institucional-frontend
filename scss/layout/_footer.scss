@@ -1,8 +1,75 @@
 @use '../base/variables' as *;
 
 .pie {
-    padding: $espaciado-lg 0;
-    background-color: $color-oscuro;
+    padding-top: 4rem;
+    background-color: $color-footer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pie__contenido {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.logo--footer {
     color: $color-blanco;
+}
+
+.pie__texto {
+    max-width: 360px;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pie__titulo {
+    margin-bottom: 1rem;
+    color: $color-blanco;
+    font-size: 1.1rem;
+}
+
+.pie__lista {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.pie__lista a:hover {
+    color: $color-blanco;
+}
+
+.pie__inferior {
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
+}
+
+.pie__redes {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.pie__red-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    color: $color-blanco;
+    transition: transform $transition-base, background-color $transition-base, border-color $transition-base;
+}
+
+.pie__red-social svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.pie__red-social:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.35);
 }

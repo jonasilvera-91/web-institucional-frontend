@@ -1,22 +1,179 @@
 @use '../base/variables' as *;
 
-.formulario-contacto {
-    display: grid;
-    gap: $espaciado-md;
-    max-width: 700px;
-    margin-top: $espaciado-lg;
+@media (max-width: $bp-tablet) {
+    .encabezado__contenido,
+    .hero__contenido,
+    .nosotros__contenido,
+    .contacto__contenido,
+    .beneficios__contenido,
+    .cta__contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado__contenido {
+        display: grid;
+        justify-items: center;
+    }
+
+    .navegacion__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .encabezado__boton {
+        display: none;
+    }
+
+    .servicios__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proceso__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonios__grid,
+    .confianza__grid,
+    .beneficios__lista,
+    .pie__contenido {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        padding-top: 4rem;
+    }
+
+    .hero__visual {
+        order: -1;
+    }
+
+    .cta__acciones {
+        justify-self: start;
+    }
 }
 
-.formulario-contacto__grupo {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+@media (max-width: $bp-mobile) {
+    .seccion {
+        padding: 4.5rem 0;
+    }
+
+    .encabezado {
+        padding: 0.9rem 0;
+    }
+
+    .encabezado__contenido {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .navegacion {
+        position: absolute;
+        top: calc(100% + 0.8rem);
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem;
+        border: 1px solid $color-borde;
+        border-radius: 1.2rem;
+        background-color: $color-blanco;
+        box-shadow: $sombra-media;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity $transition-base, visibility $transition-base, transform $transition-base;
+    }
+
+    .navegacion.activa {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navegacion__lista {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .boton-menu {
+        display: inline-flex;
+        justify-self: end;
+    }
+
+    .encabezado__boton {
+        display: none;
+    }
+
+    .hero__contenido,
+    .nosotros__contenido,
+    .contacto__contenido,
+    .beneficios__contenido,
+    .cta__contenido,
+    .testimonios__grid,
+    .confianza__grid,
+    .beneficios__lista,
+    .servicios__grid,
+    .proceso__grid,
+    .pie__contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__titulo {
+        font-size: 2.4rem;
+    }
+
+    .hero__imagen-principal,
+    .nosotros__imagen {
+        min-height: 280px;
+    }
+
+    .card-servicio,
+    .card-testimonio,
+    .paso,
+    .beneficio,
+    .formulario-contacto {
+        padding: 1.5rem;
+    }
+
+    .pie {
+        padding-top: 3rem;
+    }
+
+    .boton-wp {
+    right: 1rem;
+    bottom: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    }
+
+    .boton-wp svg {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
 }
 
-.formulario-contacto input,
-.formulario-contacto textarea {
-    padding: 0.9rem 1rem;
-    border: 1px solid $color-borde;
-    border-radius: 0.5rem;
-    font: inherit;
+@media (max-width: $bp-mobile-sm) {
+    .contenedor {
+        width: min(92%, $ancho-contenedor);
+    }
+
+    .hero__titulo {
+        font-size: 2rem;
+    }
+
+    .hero__acciones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .boton {
+        width: 100%;
+    }
+
+    .hero__datos {
+        flex-direction: column;
+    }
+
 }
